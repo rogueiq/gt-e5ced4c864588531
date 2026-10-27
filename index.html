@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#F3D9B8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Good Times">
+<title>Good Times</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<style>
+  html,body{margin:0;background:#F6EEE4;-webkit-text-size-adjust:100%;}
+  *{-webkit-tap-highlight-color:transparent}
+  button,input,textarea{font:inherit}
+  @media (max-width: 520px) {
+    .gp-outer{padding:0 !important;min-height:100dvh !important;}
+    .gp-phone{max-width:none !important;height:100dvh !important;max-height:none !important;min-height:0 !important;border-radius:0 !important;border:none !important;
+      padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right);box-sizing:border-box;}
+  }
+  .gate{min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:max(24px,env(safe-area-inset-top)) 28px max(24px,env(safe-area-inset-bottom));box-sizing:border-box;text-align:center;
+    background:linear-gradient(170deg,#F6D9B4 0%,#F7E9DA 40%,#E3EAF2 75%,#DCE9E3 100%);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;color:#2A2833}
+  .gate h1{font-family:ui-serif,"New York",Georgia,serif;font-weight:500;font-size:36px;margin:0}
+  .gate p{margin:0;font-size:18px;color:#55515E;max-width:320px;line-height:1.5}
+  .gate input{width:100%;max-width:320px;min-height:58px;border-radius:29px;border:1px solid rgba(42,40,51,.22);background:rgba(255,255,255,.75);padding:0 22px;font-size:19px;box-sizing:border-box;color:#2A2833;text-align:center}
+  .gate button{width:100%;max-width:320px;min-height:58px;border-radius:29px;border:none;background:#2A2833;color:#FBF8F3;font-size:19px;font-weight:600;cursor:pointer}
+  .gate input:focus-visible,.gate button:focus-visible{outline:3px solid #4F6F99;outline-offset:3px}
+  .gate-err{color:#8A3B2E !important}
+  .gate-orb{width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,#F2B877 0%,rgba(242,184,119,.4) 55%,transparent 72%);animation:b 8s ease-in-out infinite}
+  @keyframes b{0%,100%{transform:scale(.82);opacity:.75}50%{transform:scale(1.08);opacity:1}}
+  @media (prefers-reduced-motion: reduce){.gate-orb{animation:none}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<noscript>Good Times needs JavaScript.</noscript>
+<script src="app.js"></script>
+</body>
+</html>
